@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The Frog Prince Survey</title>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="survey">
+          <main>
+          <h1 id="title">The Frog Prince</h1>
+          <p id="description">The video game everyone loves</p>
+          <hr>
+          <section>
+              <h2>Survey</h2>
+              <form id="survey-form" method="get">
+                <fieldset>
+                  <label for="name" id="name-label">Enter Your Name:<div>
+                    <input required id="name" type="text" placeholder="John Doe"/>
+                  </label>
+                  <label for="age" id="age-label">Enter Your Age:<div>
+                    <input required id="age" min="13" max="120" type="number" placeholder="30"/>
+                  </label>
+                  <label for="email" id="email-label">Enter your email:<div>
+                    <input required id="email" type="email" placeholder="johndoe@email.com"/>
+                  </label>
+                  <label for="number" id="number-label">
+                    Enter your phone number:<div> 
+                    <input id="number" type="number" min="0" max="9999999999" placeholder="0123456789"/>
+                  </label>
+                </fieldset>
+                <fieldset>
+                  <label for="gender">1.What is your gender?<div>
+                    <input type="radio" id="female" value="gender" name="gender"/>Female<div>
+                    <input type="radio" id="male" value="gender" name="gender"/>Male<div>
+                    <input type="radio" id="ratherNotSay" value="gender" name="gender"/>Rather not say<div>
+                  </label>
+                  <label for=""> What would you like to see improved? <div>
+                    <input type="checkbox" value="graphics"/>Graphics<div>
+                    <input type="checkbox" value="storyPlot"/>Story Plot<div>
+                    <input type="checkbox" value="challenges"/>Challenges<div>
+                    <input type="checkbox" value="characterBackstories"/>Character Backstories<div>
+                    <input type="checkbox" value="animation"/>Animation
+                  </label>
+                </fieldset>
+                <fieldset>
+                  <label for="dropdown-label">What is the best feature of the game?<div>
+                    <select id="dropdown">
+                      <option value="">(select one)</option>
+                      <option value="1">Graphics</option>
+                      <option value="2">Storyline</option>
+                      <option value="3">Characters</option>
+                      <option value="4"></option>
+                   </select>
+                  </label>
+                  <label for="suggestions">Please put in your suggestions or any comment<div>
+                    <textarea id="suggestions"></textarea><div>
+                    <input type="submit" value="submit-survey" id="submit"/>
+                  </label>
+                </fieldset>
+              </form>
+          </section>
+          <section>
+            <h2></h2>
+            <form action="https://frogprince.com/submit-survey"></form>
+          </section>
+          </main>
+          <hr class="bottom-line">
+          <footer>
+            <p>No Copyright est.2023 - <a href="">FrogPrince.com</a></p>
+            <p class="address">123 Frog Prince Rd</p>
+          </footer>
+         </div>
+    </body>
+</html>
